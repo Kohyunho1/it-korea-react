@@ -1,0 +1,8 @@
+.aside {
+  /* flex: 0 0 20vw;
+  order: 2; */
+  width: 20vw;
+  border: 1px solid black;
+  background: beige;
+  padding: 1%;
+}

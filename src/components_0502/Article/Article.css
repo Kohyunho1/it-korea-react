@@ -1,0 +1,7 @@
+.article {
+  /* flex: 1;
+  order: 1; */
+  width: 60vw;
+  padding: 1%;
+  border: 1px solid red;
+}

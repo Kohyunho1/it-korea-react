@@ -1,0 +1,16 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.chef {
+  /* 위 | 오른쪽 | 아래 | 왼쪽 */
+  padding: 25px 0 25px 0;
+  border: 2px solid red;
+}
+.section {
+  padding: 25px 0 25px 0;
+  /* 글씨 가운데 정렬 */
+  text-align: center;
+  border: 2px solid black;
+}

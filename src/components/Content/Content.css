@@ -1,0 +1,14 @@
+.content {
+  display: flex;
+  height: 60vh;
+  border: 1px solid black;
+}
+.article {
+  width: 80vw;
+  border: 1px solid red;
+}
+.aside {
+  width: 20vw;
+  background-color: beige;
+  border: 1px solid blue;
+}
