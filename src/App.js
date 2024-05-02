@@ -1,4 +1,4 @@
-import Main from './components_chef/Main';
+import Main from './components_plan/Main';
 
 function App() {
   /*return에 HTML을 작성하는 문법을 JSX(Javascropt Syntax Extension)
