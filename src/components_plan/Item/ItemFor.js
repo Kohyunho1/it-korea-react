@@ -3,7 +3,6 @@ import './Item.css';
 
 const ItemFor = () => {
   const item = ['첫번째', '두번째', '세번째'];
-  const money = [19, 20, 21];
   return (
     <div className="container">
       {item.map((value) => (
