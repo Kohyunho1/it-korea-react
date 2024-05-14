@@ -1,0 +1,62 @@
+.card-container {
+  width: 1000px;
+  height: 400px;
+  border: 1px solid black;
+  /* padding은 auto가 없음 */
+  margin: 120px auto;
+  display: flex;
+}
+.col {
+  height: 100%;
+  color: #fff;
+  border: 1px solid red;
+  padding: 25px;
+  position: relative;
+  transition: 0.6s;
+}
+/* 차일드 */
+.col:nth-child(1) {
+  background: #283491;
+}
+
+.col:nth-child(2) {
+  background: #f18684;
+}
+
+.col:nth-child(3) {
+  background: #6ee2f1;
+}
+h2 {
+  text-align: center;
+  font-size: 22px;
+  font-weight: 600;
+}
+.caption {
+  margin: 28px 0;
+  display: block;
+  border: 3px solid black;
+}
+.col img {
+  width: 200px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+/* hover 이벤트 모음 */
+.col:hover {
+  flex-grow: 2.5;
+}
+
+.col:hover .caption {
+  display: block;
+}
+
+.col:hover h2 {
+  text-align: left;
+}
+.btn-active {
+  display: block;
+}
+.btn-inactive {
+  display: none;
+}

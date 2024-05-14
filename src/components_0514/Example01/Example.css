@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+/* Tours section*/
+.row {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+  border: 2px solid black;
+}
+.row .col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid black;
+  padding: 1%;
+}
+.tours {
+  width: 80%;
+  margin: 80px auto;
+  border: 3px solid black;
+}
+.content-col {
+  width: 40%;
+}
+.content-col h1 {
+  font-size: 5vmin;
+  color: #484872;
+  border: 2px solid black;
+}
+.content-col p {
+  padding: 0;
+  margin: 30px auto;
+}
+.content-col .ctn {
+  margin-left: -100px;
+}
+.image-col {
+  width: 60%;
+  border: 3px solid black;
+}

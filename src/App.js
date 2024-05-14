@@ -1,5 +1,6 @@
-import Main from './components_plan/Main';
+import Main from './components_0514/Example04/Main';
 
+//App은 Root(최상위 부모) 컴포넌트라고 부른다.
 function App() {
   /*return에 HTML을 작성하는 문법을 JSX(Javascropt Syntax Extension)
   => 자바스크립트를 확장한 문법

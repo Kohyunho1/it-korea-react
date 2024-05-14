@@ -1,0 +1,25 @@
+.header-content {
+  margin: 0 auto;
+  width: 800px;
+  margin-top: 350px;
+  border: 2px solid black;
+  text-align: center;
+  padding: 1%;
+}
+.header-content h2 {
+  border: 2px solid black;
+  font-size: 4vmin;
+}
+.header-content h1 {
+  border: 2px solid black;
+  font-size: 7vmin;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+.ctn {
+  border: 2px solid black;
+  padding: 8px 15px;
+  background: #fc036b;
+  border-radius: 30px;
+  color: whitesmoke;
+}
