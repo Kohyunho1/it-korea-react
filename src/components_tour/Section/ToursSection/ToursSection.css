@@ -1,0 +1,29 @@
+.tours {
+  width: 80%;
+  margin: 80px auto;
+}
+.content-col {
+  width: 40%;
+}
+.content-col h1 {
+  font-size: 7vmin;
+  color: #484872;
+}
+.content-col .line {
+  margin-left: -1px;
+}
+.content-col p {
+  padding: 0;
+  margin: 30px auto;
+}
+.image-col {
+  width: 60%;
+}
+.tours .image-gallery {
+  display: flex;
+  flex-wrap: wrap;
+}
+.image-gallery img {
+  width: 250px;
+  margin: 10px;
+}

@@ -9,6 +9,8 @@ import reportWebVitals from './reportWebVitals';
 //가상돔은 24시간 모니터링 한다.
 const root = ReactDOM.createRoot(document.getElementById('root')); //public폴더 안에 있는 index.html에 중 div id가 root인 태그를 불러옴
 root.render(
+  //StrictMode 때문에 중복으로 출력됨
+  //StrictMode는 리액트에서 에러나는 위치를 찾아주는 역활을 한다.
   <React.StrictMode>
     <App />
   </React.StrictMode>,

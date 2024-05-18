@@ -1,0 +1,8 @@
+header {
+  min-height: 90vh;
+  width: 100%;
+  background-color: rgba(4, 10, 20, 0.8);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
