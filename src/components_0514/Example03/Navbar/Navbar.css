@@ -1,0 +1,29 @@
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+/* NAVBAR */
+.navbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding: 20px;
+  border: 2px solid black;
+}
+.navbar .logo {
+  border: 2px solid black;
+}
+.nav-links {
+  border: 2px solid black;
+  display: flex;
+  align-items: center;
+}
+.nav-links li {
+  border: 2px solid black;
+  margin: 0 30px;
+}

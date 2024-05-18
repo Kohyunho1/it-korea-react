@@ -1,0 +1,8 @@
+.nav {
+  /* flex: 0 0 20vw;
+  order: 3; */
+  width: 20vw;
+  border: 1px solid pink;
+  background: #d7e8d4;
+  padding: 1%;
+}

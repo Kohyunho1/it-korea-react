@@ -1,0 +1,9 @@
+.title {
+  border: 2px solid black;
+  margin-bottom: 50px;
+}
+.title h1 {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
