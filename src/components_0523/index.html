@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      .Main {
+        padding: 1%;
+        margin: 50px auto;
+        width: 300px;
+        height: auto;
+        border: 1px solid black;
+      }
+      .Header {
+        background-color: orange;
+        border: 1px solid black;
+      }
+      .Header h2 {
+        text-align: center;
+      }
+      .SearchBar {
+        background-color: cadetblue;
+        padding: 1%;
+      }
+      .SearchBar input {
+        width: 100%;
+        height: 2rem;
+      }
+      .UserList {
+        background-color: cornflowerblue;
+      }
+      .UserList li {
+        background-color: darkblue;
+        color: #fff;
+        list-style: none;
+        border: 1px solid black;
+        padding: 3%;
+        margin-bottom: 5px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="Main">
+      <div class="Header">
+        <h2>회원 목록</h2>
+      </div>
+      <div class="SearchBar">
+        <input type="text" placeholder="검색창..." />
+      </div>
+      <ul class="UserList">
+        <li class="UserListItem">KING</li>
+        <li class="UserListItem">LEE</li>
+        <li class="UserListItem">JONES</li>
+        <li class="UserListItem">SMITH</li>
+        <li class="UserListItem">JAMES</li>
+        <li class="UserListItem">RAY</li>
+      </ul>
+    </div>
+  </body>
+</html>

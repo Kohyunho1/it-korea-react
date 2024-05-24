@@ -21,7 +21,7 @@ const EventSection = () => {
         </div>
         <div className="row">
           {json.map((data, index) => (
-            <div className="col">
+            <div className="col" key={index}>
               <img src={require('../../Img/' + data.imgName + '.png')} alt="" />
               <h4>{data.title}</h4>
               <p>

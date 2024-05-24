@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body></body>
+  <script>
+    // 배열 구조 분해할당
+    const array = [1, 2, 34]; //배열은 값을 여러개 저장할 수 있음
+
+    const [x, y] = [1, 8]; //순차적으로 값을 대입한다.
+    console.log('x : ' + x);
+    console.log('y : ' + y);
+    const [a = 10, b = 20] = [1];
+    console.log('a : ' + a);
+    console.log('b : ' + b);
+    const [c, , d] = [1, 2, 3];
+    console.log('c : ' + c);
+    console.log('d : ' + d);
+    const [e, ...f] = [1, 2, 3, 4, 5, 6];
+    console.log('e : ' + e);
+    console.log('f : ' + f);
+    const [num, num2, num3] = getNum(); //getNum이라는 함수호출
+    console.log('num : ' + num);
+    console.log('num2 : ' + num2);
+    console.log('num3 : ' + num3);
+
+    function getNum() {
+      return [1, 2, 3];
+    }
+
+    const [count, setcount] = useState(5); //배열 구조 분해할당(리액트에서 10000000% 사용)
+    console.log('count : ' + count);
+    console.log('setcount : ' + setcount);
+    function useState(x) {
+      return [x * 2, x * 3];
+    }
+    //문제 count와 setCount의 값은?
+  </script>
+</html>

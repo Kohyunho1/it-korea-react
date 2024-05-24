@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        table{
+            margin: 100px auto;
+        }
+        table, th, td{
+            border: 1px solid
+        }
+    </style>
+  </head>
+  <body>
+    <table>
+      <!-- thead : 테이블에 맨 위에오는 데이터 -->
+      <thead>
+        <!-- tr : table row (행) -->
+        <tr>
+          <!-- th : 제목 -->
+          <th>상품</th>
+          <th>가격</th>
+        </tr>
+        <!-- tbody : 실제 데이터를 입력하는 곳 -->
+        <tbody>
+            <tr>
+                <th colspan="2">돼지 고기</th>
+            </tr>
+            <tr>
+                <!-- td : table data -->
+                <td>삼겹살</td>
+                <td>$13.99</td>
+            </tr>
+            <tr>
+                <td>목살</td>
+                <td>$9.99</td>
+            </tr>
+            <tr>
+                <th colspan="2">소고기</th>
+            </tr>
+            <tr>
+                <td>등심</td>
+                <td>$55.99</td>
+            </tr>
+            <tr>
+                <td>안심</td>
+                <td>$79.99</td>
+            </tr>
+        </tbody>
+      </thead>
+    </table>
+  </body>
+</html>
