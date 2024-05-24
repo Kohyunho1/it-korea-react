@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        table{
+            margin: 100px auto;
+        }
+        table, th, td{
+            border : 1px solid
+        }
+    </style>
+  </head>
+  <body>
+    <div id="section"> 
+      <table>
+          <!-- thead : 테이블 맨 위에오는 데이터 -->
+          <thead>
+            <!-- tr : table row (행) -->
+            <tr>
+              <!-- th : 제목 -->
+              <th>상품</th>
+              <th>가격</th>
+            </tr>
+            <!-- tbody : 실제 데이터를 입력하는 곳 -->
+            <tbody id="productTable">
+                
+            </tbody>
+          </thead>
+        </table>
+    </div>
+
+  </body>
+  <script>
+    const PRODUCTS = [
+      { category: '돼지고기', price: '$13.99', stocked: true, name: '삼겹살' },
+      { category: '돼지고기', price: '$9.99', stocked: true, name: '목살' },
+      { category: '소고기', price: '$55.99', stocked: false, name: '등심' },
+      { category: '소고기', price: '$79.99', stocked: true, name: '안심' },
+    ];
+    //json 반복문 돌리기
+    let html = '';
+    let lastCategory = null;
+    //forEach : 반복문
+    PRODUCTS.forEach((data) => {
+      if(lastCategory != data.category){
+        html += `
+        <tr id="category">
+          <th colSpan="2">${data.category}</th>
+        </tr>`;
+      }
+      lastCategory = data.category;
+      html += `
+        <tr id="item">
+          <td>${data.name}</td>
+          <td>${data.price}</td>
+        </tr>`;
+    });
+    document.querySelector('#productTable').innerHTML = html;
+    
+    let x = [1,2,3];
+    //일반 for문으로 돌리기
+    for(let i=0; i<x.length; i++){
+      console.log(x[i]);
+    }
+    //forEach문 : only read!
+    x.forEach((i, index) => {
+      console.log(i);
+    })
+    //map은 return할 수 있다.
+    let y = x.map((i, index) => {
+      return i;
+    });
+    //react에서는 map하고 foreach 자주 사용한다.
+    console.log(y);
+  </script>
+</html>

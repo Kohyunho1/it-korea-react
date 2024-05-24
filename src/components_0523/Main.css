@@ -1,0 +1,39 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.Main {
+  padding: 1%;
+  margin: 50px auto;
+  width: 300px;
+  height: auto;
+  border: 1px solid black;
+}
+.Header {
+  background-color: orange;
+  border: 1px solid black;
+}
+.Header h2 {
+  text-align: center;
+}
+.SearchBar {
+  background-color: cadetblue;
+  padding: 1%;
+}
+.SearchBar input {
+  width: 100%;
+  height: 2rem;
+}
+.UserList {
+  background-color: cornflowerblue;
+}
+.UserList li {
+  background-color: darkblue;
+  color: #fff;
+  list-style: none;
+  border: 1px solid black;
+  padding: 3%;
+  margin-bottom: 5px;
+  text-align: center;
+}
