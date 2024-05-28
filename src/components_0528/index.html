@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body></body>
+  <script>
+    //구조 분해 할당(리액트에서 100% 사용합니다.)
+    const [a, b] = [2, 5];
+    const [c, , d] = [2, 7, 19];
+    //... 100% 사용합니다.
+    const [x, ...y] = [1, 2, 3, 4, 5];
+
+    const json = { name: 'allen', age: 20, phone: '000' };
+    const json2 = { addr: 'jeju' };
+    const a1 = { ...json, json2 };
+    const a2 = { json2 };
+    console.log(a1);
+
+    //왼쪽은 초기값, 오른쪽은 변경할 값
+    const [init, set] = useState(0); //useState 파라미터에 들어가는 값은 초기값을 의미
+
+    function useState(x) {
+      return [x, 10];
+    }
+
+    //filter
+    let data = [
+      {
+        uuid: 3000,
+        name: 'brian',
+        dname: 'sales',
+        loc: 'BOSTON',
+        sal: 2500,
+      },
+      {
+        uuid: 4000,
+        name: 'allen',
+        dname: 'clerk',
+        loc: 'BOSTON',
+        sal: 3500,
+      },
+      {
+        uuid: 5000,
+        name: 'smith',
+        dname: 'clerk',
+        loc: 'BOSTON',
+        sal: 1800,
+      },
+      {
+        uuid: 6000,
+        name: 'jones',
+        dname: 'clerk',
+        loc: 'LA',
+        sal: 1800,
+      },
+    ];
+    //filter : 데이터를 검색할 때 종종사용.
+    let value = 'clerk';
+    let emp = data.filter((e) => {
+      return e.dname.includes(value);
+    });
+    console.log(emp);
+
+    let value2 = 'CLERK';
+    emp = data.filter((e) => {
+      //대문자를 소문자로 변경해서 필터링
+      return e.dname.includes(value2.toLowerCase());
+    });
+    console.log(emp);
+
+    //급여가 2000이하인 사원 조회
+    emp = data.filter((e) => {
+      return e.sal <= 2000;
+    });
+    console.log(emp);
+    //사원번호가 5000인 사원 조회
+    emp = data.filter((e) => {
+      return e.uuid === 5000;
+    });
+    console.log(emp);
+    //5000번 빼고 사원 전체 조회
+    emp = data.filter((e) => {
+      return e.uuid !== 5000;
+    });
+    console.log(emp);
+
+    //근무지가 boston이고 부서이름이 clerk인 사원 전체 조회
+    emp = data.filter((e) => {
+      return e.loc.toLowerCase().includes('boston') && e.dname.includes('clerk');
+    });
+    console.log(emp);
+  </script>
+</html>

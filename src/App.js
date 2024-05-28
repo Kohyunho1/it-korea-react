@@ -1,5 +1,5 @@
-import State from './components_0524/State';
-import Test from './components_0524/Test';
+import Event from './components_0528/Event';
+import Event2 from './components_0528/Event2';
 
 //App은 Root(최상위 부모) 컴포넌트라고 부른다.
 //App.js가 root (루트 컴포넌트)
@@ -19,7 +19,7 @@ function App() {
   return (
     <div>
       {/* Main이라는 컴포넌트를 불러옴 */}
-      <State></State>
+      <Event></Event>
     </div>
   );
 }
