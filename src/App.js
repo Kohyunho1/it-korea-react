@@ -1,4 +1,4 @@
-import TodoWrapper from './components_0530/todo/TodoWrapper';
+import Main from './components_0530/todo/TodoWrapper';
 
 //App은 Root(최상위 부모) 컴포넌트라고 부른다.
 //App.js가 root (루트 컴포넌트)
@@ -17,7 +17,7 @@ function App() {
 
   return (
     <div>
-      <TodoWrapper></TodoWrapper>
+      <Main></Main>
     </div>
   );
 }

@@ -1,0 +1,48 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.switch {
+  margin: 30px auto;
+  position: relative;
+  display: flex;
+  width: 60px;
+  height: 34px;
+  border: 1px solid black;
+}
+.switch input {
+  width: 0;
+  height: 0;
+  opacity: 0;
+}
+.slider {
+  position: absolute;
+  cursor: pointer;
+  /* border: 1px solid red; */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  border-radius: 34px;
+}
+.slider::before {
+  position: absolute;
+  content: '';
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  border-radius: 50%;
+  transition: 0.4s;
+}
+/* input에 체크를 하면 slider에 배경색 수정 */
+input:checked + .slider {
+  background-color: #2196f3;
+}
+input:checked + .slider::before {
+  /* translateX : X 좌표로 이동 */
+  transform: translateX(26px);
+}
