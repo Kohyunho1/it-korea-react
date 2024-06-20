@@ -1,0 +1,29 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.carousel {
+  margin: 5% 5%;
+  cursor: grab;
+  overflow: hidden;
+  background-color: rgb(230, 173, 173);
+}
+
+.inner-carousel {
+  display: flex;
+}
+
+.item {
+  min-height: 30rem;
+  min-width: 30rem;
+  padding: 20px;
+}
+.item img {
+  width: 90%;
+  height: 90%;
+  border-radius: 2rem;
+  /* 이벤트(클릭, 드래그, 호버 등)를 비활성화. */
+  pointer-events: none;
+}

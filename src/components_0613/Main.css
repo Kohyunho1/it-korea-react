@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(to right, #2c5364, #203a43);
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card {
+  background-color: #fff;
+  padding: 3rem 5rem;
+  border-radius: 2rem;
+}
+
+.card p {
+  padding-top: 1rem;
+  line-height: 150%;
+}
+.expand {
+  width: 30rem;
+}
