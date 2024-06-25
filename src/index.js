@@ -3,9 +3,6 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 
-import { worker } from './components_0620/mocks/worker';
-worker.start(); //가상백엔드 실행
-
 //ReactDOM은 VirtualDOM이라고 부른다.
 //VirtualDOM(가상돔)은 변경된 부분이 있으면 감지를 해서 수정한다.(실시간으로 데이터가 바뀌는 이유)
 //가상돔은 24시간 모니터링 한다.

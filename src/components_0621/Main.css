@@ -1,0 +1,28 @@
+.user-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+  border: 1px solid black;
+  width: 500px;
+  cursor: pointer;
+}
+.user-item:hover {
+  background-color: powderblue;
+}
+
+.container {
+  width: 1000px;
+  border: 1px solid black;
+  margin: 0 auto;
+  display: flex;
+}
+
+.right {
+  width: 100%;
+}
+
+.user-info {
+  width: 300px;
+  border: 1px solid black;
+  margin: 10px auto;
+}

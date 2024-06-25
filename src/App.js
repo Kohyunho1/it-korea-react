@@ -1,9 +1,8 @@
 //App은 Root(최상위 부모) 컴포넌트라고 부른다.
 //App.js가 root (루트 컴포넌트)
 
-import Movie from './components_0620/Movie/Movie';
+import Main from './components_0621/Main';
 
-//여기서 화면 전체에 대한 설정을 한다.
 function App() {
   /*return에 HTML을 작성하는 문법을 JSX(Javascropt Syntax Extension)
   => 자바스크립트를 확장한 문법
@@ -18,7 +17,7 @@ function App() {
 
   return (
     <div>
-      <Movie></Movie>
+      <Main></Main>
     </div>
   );
 }
