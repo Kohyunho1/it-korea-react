@@ -1,0 +1,9 @@
+.container {
+  width: 500px;
+  border: 1px solid black;
+  display: flex;
+}
+
+.sub h4 {
+  text-align: center;
+}

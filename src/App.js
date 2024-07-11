@@ -1,7 +1,7 @@
 //App은 Root(최상위 부모) 컴포넌트라고 부른다.
 //App.js가 root (루트 컴포넌트)
 
-import Main from './components_0621/Main';
+import UseRef from './components_0705/UseRef';
 
 function App() {
   /*return에 HTML을 작성하는 문법을 JSX(Javascropt Syntax Extension)
@@ -17,7 +17,7 @@ function App() {
 
   return (
     <div>
-      <Main></Main>
+      <UseRef></UseRef>
     </div>
   );
 }
